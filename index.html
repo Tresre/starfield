@@ -11,7 +11,46 @@
         }
         canvas {
             display: block;
+            index: -1;
+            width: 100%;
         }
+        .cabin {
+        	index: 2;
+            position: absolute;
+            top: -60px;
+            height: 110%;
+            width: 100%;
+            filter: contrast(1.75);
+            filter: brightness(0.5);
+        }
+        
+        @keyframes frigate-animation {
+    		0% {
+    			transform: translate(-2500px);
+			}
+			
+        }
+
+		.frigate {
+  			index: 2;
+            position: absolute;
+            top: 200px;
+            left: 1500px;
+            height: 20%;
+            width: 40%;
+            filter: contrast(1.75);
+            filter: brightness(0.5);
+  			animation-name: frigate-animation;
+  			animation-duration: 20s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+  
+
+    transform-origin: 50% 50%;
+    display: inline-block;
+    transform: scale(1);
+    transition: all .2s linear;
+		}
     </style>
 </head>
 <body>
@@ -77,6 +116,8 @@
     function randomSign() {
         return Math.random() >= 0.5 ? 1 : -1;
     }
-</script>   
+</script>
+<div class="frigate"><img src="https://i.ibb.co/DDbdkKX/pngwing-com.png" alt="pngwing-com" style="height: 100%; width: 100%;"></div>
+<div class="cabin"><img src="https://i.ibb.co/3ptxXjS/Starship-Lounge-02.png" alt="Starship-Lounge-02" style="height: 100%; width: 100%;"></div>
 </body>
 </html>
