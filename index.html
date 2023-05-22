@@ -7,6 +7,7 @@
     <style>
         body {
             margin: 0;
+            overflow: hidden;
         }
         canvas {
             display: block;
@@ -17,7 +18,7 @@
 <script>
     var canvas = document.createElement("canvas");
     var ctx = canvas.getContext("2d");
-    canvas.height = document.documentElement.clientHeight;
+    canvas.height = document.documentElement.clientHeight + 250;
     canvas.width = document.documentElement.clientWidth;
     document.body.appendChild(canvas);
 
@@ -25,8 +26,8 @@
     var starSpeed = 0.05 * canvas.width;
     var xv = starSpeed * 0.3;
     var yv = Math.sqrt(Math.pow(starSpeed, 2) - Math.pow(xv, 2));
-    for (let i = 0; i < 200; i++) {
-        let speedMult = Math.random() * 1.5 + 0.5;
+    for (let i = 0; i < 1000; i++) {
+        let speedMult = Math.random() * 3.5 + 0.5;
         stars[i] = {
             r: Math.random() * 0.004 * canvas.width / 2,
             x: Math.floor(Math.random() * canvas.width),
@@ -48,7 +49,7 @@
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.fillStyle = "white";
-        for (let i = 0; i < 200; i++) {
+        for (let i = 0; i < 1000; i++) {
             ctx.beginPath();
             ctx.arc(stars[i].x, stars[i].y, stars[i].r, 0, Math.PI * 2);
             ctx.fill();
