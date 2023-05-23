@@ -26,9 +26,15 @@
             filter: brightness(0.5);
         }
         
-        @keyframes frigate-animation {
+        @keyframes ltr-animation {
     		0% {
     			transform: translate(-700%);
+			}
+        }
+        
+        @keyframes rtl-animation {
+    		0% {
+    			transform: translate(700%);
 			}
         }
 
@@ -40,17 +46,72 @@
             height: 150px;
             width: 300px;
             filter: contrast(1.75);
-            filter: brightness(0.5);
-  			animation-name: frigate-animation;
+            filter: brightness(0.75);
+  			animation-name: ltr-animation;
   			animation-duration: 25s;
             animation-iteration-count: infinite;
             transition: all 3s linear;
-  
-
-    transform-origin: 50% 50%;
-    display: inline-block;
-    transform: scale(1);
-    transition: all .2s linear;
+    		transform-origin: 50% 50%;
+    		display: inline-block;
+    		transform: scale(1);
+    		transition: all .2s linear;
+		}
+        
+        .axiom {
+  			index: 2;
+            position: absolute;
+            top: 80px;
+            left: 150%;
+            height: 450px;
+            width: 750px;
+            filter: contrast(1.75);
+            filter: brightness(0.75);
+  			animation-name: ltr-animation;
+  			animation-duration: 45s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+    		transform-origin: 50% 50%;
+    		display: inline-block;
+    		transform: scale(1);
+    		transition: all .2s linear;
+		}
+        
+        .wingship {
+  			index: 2;
+            position: absolute;
+            top: 80px;
+            right: 150%;
+            height: 450px;
+            width: 550px;
+            filter: contrast(1.5);
+            filter: brightness(0.6);
+  			animation-name: rtl-animation;
+  			animation-duration: 35s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+    		transform-origin: 50% 50%;
+    		display: inline-block;
+    		transform: scale(1);
+    		transition: all .2s linear;
+		}
+        
+        .scout {
+  			index: 2;
+            position: absolute;
+            top: 80px;
+            right: 150%;
+            height: 450px;
+            width: 550px;
+            filter: contrast(1.5);
+            filter: brightness(0.6);
+  			animation-name: rtl-animation;
+  			animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+    		transform-origin: 50% 50%;
+    		display: inline-block;
+    		transform: scale(1);
+    		transition: all .2s linear;
 		}
     </style>
 </head>
@@ -118,7 +179,18 @@
         return Math.random() >= 0.5 ? 1 : -1;
     }
 </script>
-<div class="frigate"><img src="https://i.ibb.co/DDbdkKX/pngwing-com.png" alt="pngwing-com" style="height: 100%; width: 100%;"></div>
+<div class="frigate"><img src="https://i.ibb.co/DDbdkKX/pngwing-com.png" alt="pngwing-com" style="height: 100%; width: 100%; "></div>
+
+<div class="axiom"><img src="https://i.ibb.co/P6dz97w/pngfind-com-wall-e-png-1557502.png" alt="pngfind-com-wall-e-png-1557502" style="height: 100%; width: 100%;"></div>
+
+<div class="wingship"><img src="https://i.ibb.co/MVSY24Y/pngwing-com-2.png" alt="pngwing-com-2" style="height: 100%; width: 100%;"></div>
+
+<div class="scout"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px;"></a></div>
+<div class="scout"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px; down: 10px;"></a></div>
+
+<div class="scout"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px;"></a></div>
+
+
 <div class="cabin"><img src="https://i.ibb.co/3ptxXjS/Starship-Lounge-02.png" alt="Starship-Lounge-02" style="height: 100%; width: 100%;"></div>
 </body>
 </html>
