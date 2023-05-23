@@ -98,14 +98,31 @@
         .scout {
   			index: 2;
             position: absolute;
-            top: 80px;
-            right: 150%;
             height: 450px;
             width: 550px;
             filter: contrast(1.5);
             filter: brightness(0.6);
   			animation-name: rtl-animation;
-  			animation-duration: 10s;
+  			animation-duration: 55s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+    		transform-origin: 50% 50%;
+    		display: inline-block;
+    		transform: scale(1);
+    		transition: all .2s linear;
+		}
+        
+        .destroyer {
+  			index: 2;
+            position: absolute;
+            top: 100px;
+            right: 150%;
+            height: 125px;
+            width: 575px;
+            filter: contrast(1.5);
+            filter: brightness(0.6);
+  			animation-name: rtl-animation;
+  			animation-duration: 65s;
             animation-iteration-count: infinite;
             transition: all 3s linear;
     		transform-origin: 50% 50%;
@@ -185,10 +202,11 @@
 
 <div class="wingship"><img src="https://i.ibb.co/MVSY24Y/pngwing-com-2.png" alt="pngwing-com-2" style="height: 100%; width: 100%;"></div>
 
-<div class="scout"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px;"></a></div>
-<div class="scout"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px; down: 10px;"></a></div>
+<div class="scout" style="top: 130px; right: 150%;"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px;"></div>
+<div class="scout" style="top: 100px; right: 142%;"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px; top: 80px;"></div>
+<div class="scout" style="top: 70px; right: 150%;"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px;"></div>
 
-<div class="scout"><a href="https://imgbb.com/"><img src="https://i.ibb.co/RNvYPCf/download.png" alt="download" style="height: 50px; width: 80px;"></a></div>
+<div class="destroyer"><img src="https://i.ibb.co/fSJ4qm5/pngwing-com-1.png" alt="pngwing-com-1" style="height: 100%; width: 100%;"></div>
 
 
 <div class="cabin"><img src="https://i.ibb.co/3ptxXjS/Starship-Lounge-02.png" alt="Starship-Lounge-02" style="height: 100%; width: 100%;"></div>
